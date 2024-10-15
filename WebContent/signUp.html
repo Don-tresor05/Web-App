@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form action="SignUpServlet" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="STUDENT">Student</option>
+            <option value="LECTURER">Lecturer</option>
+            <option value="REGISTRAR">Registrar</option>
+            <option value="HOD">Head of Department</option>
+        </select><br><br>
+        <input type="submit" value="Sign Up">
+         <a href="signIn.html">Already have an account? Login</a>
+        
+       
+        <button type="button" onclick="location.href='home.jsp'">Back to Home</button>
+    </form>
+</body>
+</html>
